@@ -60,7 +60,7 @@ ccApp.controller('CCCtrl', function ($scope, $http) {
                     "finance.xchange%20where%20pair%20in%20('" + updateField + "')&format=json&env=store" +
                     "%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=JSON_CALLBACK";
                 console.log("fetching YQL for", updateField);
-                $http.jsonp(yql, {timeout: 1})
+                $http.jsonp(yql, {timeout: 5000})
                     .success(function(data, status, headers, config) {
                         if (data && data.query && data.query.results && data.query.results.rate && data.query.results.rate.Rate) {
                             var nrate = parseFloat(data.query.results.rate.Rate);
