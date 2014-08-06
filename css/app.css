@@ -1,0 +1,80 @@
+div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20vh;
+    background: #6CB86C;
+}
+
+div input {
+    box-sizing: border-box;
+    padding: 0 1vw;
+}
+
+div input, li span.amount {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    bottom: 5vh;
+    width: 50vw;
+    text-align: right;
+    font-size: 8vh;
+    padding: 0;
+    margin: 0;
+}
+div select, li select {
+    font-size: 8vh;
+    position: absolute;
+    top: 2vh;
+    right: 2vh;
+    bottom: 5vh;
+    width: 42vw;
+    height: 13vh;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    border: 1px solid transparent;
+    outline: none;
+}
+div span, li span.currname {
+    position: absolute;
+    right: 2vh;
+    bottom: 2vh;
+    text-align: right;
+    font-size: 2vh;
+}
+
+ul {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 20vh;
+    list-style: none;
+    outline: 0;
+}
+li span.amount, li select { font-size: 8vh; line-height: 18vh; padding: 0;}
+li select { 
+    background: transparent;
+    border-width: 0;
+}
+li span.currname { width: 40vw; text-align: left; }
+li span.updated {
+    position: absolute;
+    left: 2vh;
+    width: 50vw;
+    bottom: 2vh;
+    text-align: right;
+    font-size: 2vh;
+    color: #ccc;
+}
